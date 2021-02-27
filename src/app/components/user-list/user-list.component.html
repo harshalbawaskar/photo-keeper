@@ -1,0 +1,15 @@
+<app-header headerText="User List"></app-header>
+<div>
+    <div class="table-header">
+        <div>
+            Name
+        </div>
+        <div>
+            Email
+        </div>
+        <div>
+            Address
+        </div>
+    </div>
+    <app-user *ngFor="let user of userList" [user]="user"></app-user>
+</div>
