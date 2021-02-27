@@ -1,0 +1,12 @@
+.photo-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.photo-holder img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
