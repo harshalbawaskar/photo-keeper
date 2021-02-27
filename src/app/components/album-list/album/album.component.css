@@ -1,0 +1,16 @@
+.album {
+    display: flex;
+}
+
+.album div {
+    display: inline;
+    padding: 10px 10px;
+    width: 30%;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.album div:first-child {
+    width: 3%;
+}

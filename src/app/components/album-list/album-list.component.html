@@ -1,0 +1,13 @@
+<app-header headerText="Album List"></app-header>
+
+<div>
+    <div class="table-header">
+        <div>
+            Select
+        </div>
+        <div>
+            Album Description
+        </div>
+    </div>
+    <app-album [album]="album" *ngFor="let album of albumList" ></app-album>
+</div>

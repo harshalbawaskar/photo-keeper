@@ -1,0 +1,7 @@
+.table-header div:first-child {
+    width: 3%
+}
+
+.table-header div {
+    width: 30%
+}
