@@ -17,3 +17,19 @@
 .table-header div:last-child {
     width: 80%;
 }
+
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #6a85b5;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ea2a9;
+    color: #fff;
+    cursor: not-allowed;
+}
