@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from '@angular/common';
+
 import { UserListComponent } from './user-list/user-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { UserComponent } from './user-list/user/user.component';
@@ -13,7 +15,8 @@ import { PhotoContainerComponent } from './photo-container/photo-container.compo
   declarations: [UserListComponent, UserComponent, AlbumListComponent, AlbumComponent, PhotoContainerComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   exports: [UserListComponent, AlbumListComponent, PhotoContainerComponent],
 })

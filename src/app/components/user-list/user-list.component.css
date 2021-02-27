@@ -1,0 +1,12 @@
+.table-header {
+    display: flex;
+}
+
+.table-header div {
+    display: inline;
+    padding: 10px 10px;
+    font-weight: bold;
+    border: 1px solid #e8e8e8;
+    min-width: 200px;
+    max-width: 200px;
+}
