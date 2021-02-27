@@ -1,6 +1,5 @@
-<app-header headerText="Your Photos"></app-header>
 <div class="align-center photo-holder">
-    <app-card *ngFor="let photo of photos" [photo]="photo">
+    <app-card *ngFor="let photo of photos" [photo]="photo" ()="">
         <div card-body>
             <img [src]="photo.url" [alt]="photo.title">
         </div>
