@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UIRouterGlobals } from '@uirouter/core';
+
 import { PhotoAlbumService } from 'src/app/services/photo-album.service';
 import { Photo } from 'src/app/types/photo';
 
@@ -11,10 +13,12 @@ export class PhotoContainerComponent implements OnInit {
 
   photos: Photo[];
 
-  constructor(private photoAlbumService: PhotoAlbumService) { }
+  constructor(private photoAlbumService: PhotoAlbumService,
+    private uiRouterGlobals: UIRouterGlobals) { }
 
   ngOnInit(): void {
-    this.photoAlbumService.getPhotos(1).subscribe((photos: Photo[]) => {
+    const albumIds = this.uiRouterGlobals.params.albumIds.split('-');
+    this.photoAlbumService.getPhotos(albumIds[0]).subscribe((photos: Photo[]) => {
       this.photos = photos;
     });
   }
