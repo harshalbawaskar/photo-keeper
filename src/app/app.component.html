@@ -1,2 +1,6 @@
-<app-header headerText="Photo Keep"></app-header>
+<app-header headerText="Photo Keep">
+    <button left-header *ngIf="!isUsersView" (click)="onBackClick()">
+        Back
+    </button>
+</app-header>
 <ui-view></ui-view>
