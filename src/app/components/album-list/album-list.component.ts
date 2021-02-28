@@ -37,7 +37,9 @@ export class AlbumListComponent implements OnInit {
   }
 
   showPhotos() {
+    // Join selected album by `-`.
     const albumIds = this.selectedAlbums.map(al => al.id).join('-');
+    
     this.stateService.go('photos', {
       userId: this.userId,
       albumIds 
