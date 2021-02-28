@@ -18,11 +18,11 @@ export class PhotoAlbumService {
     return this.httpClient.get<User[]>(`${this.baseUrl}/users`);
   }
 
-  getAlbums(userId: number): Observable<Album[]> {
+  getAlbums(userId: string): Observable<Album[]> {
     return this.httpClient.get<Album[]>(`${this.baseUrl}/users/${userId}/albums`);
   }
 
-  getPhotos(albumId: number): Observable<Photo[]> {
+  getPhotos(albumId: string): Observable<Photo[]> {
     return this.httpClient.get<Photo[]>(`${this.baseUrl}/albums/${albumId}/photos`);
   }
 }

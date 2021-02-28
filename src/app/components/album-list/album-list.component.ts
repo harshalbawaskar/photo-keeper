@@ -22,7 +22,7 @@ export class AlbumListComponent implements OnInit {
 
   ngOnInit(): void {
     this.userId = this.uiRouterGlobals.params.userId;
-    this.photoAlbumService.getAlbums(+this.userId).subscribe((albums: Album[]) => {
+    this.photoAlbumService.getAlbums(this.userId).subscribe((albums: Album[]) => {
       this.albumList = albums;
     });
   }
