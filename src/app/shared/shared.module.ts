@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
-import { TableComponent } from './table/table.component';
 import { CardComponent } from './card/card.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, TableComponent, CardComponent],
+  declarations: [HeaderComponent, CardComponent],
   imports: [
     CommonModule
   ],
-  exports: [HeaderComponent, TableComponent, CardComponent]
+  exports: [HeaderComponent, CardComponent]
 })
 export class SharedModule { }
