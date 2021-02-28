@@ -1,3 +1,11 @@
-<header>
-    {{headerText}}
+<header class="header">
+    <div class="left">
+        <ng-content select="[left-header]"></ng-content>
+    </div>
+    <div>
+        {{headerText}}
+    </div>
+    <div class="right">
+        <ng-content select="[right-header]"></ng-content>
+    </div>
 </header>
